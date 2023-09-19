@@ -47,7 +47,7 @@ open class FStreamProvider : TmdbProvider() {
         const val frenchStream = "https://french-streaming.is" // disabled
         const val blueSeries = "https://www.blueseries.uno"
         const val wiflix = "https://www.wiflix.voto"
-        val blackInkUrl = base64DecodeAPI("LmlvaW5vYXJrMi5kd3d3Oi8vdHBzaHQ=") // ALLDEBRID SOURCE - PLEASE DON'T TALK TOO MUCH ABOUT THIS SOURCE PUBLICLY
+        val blackInkUrl = "https://uptobox.mov/" // ALLDEBRID SOURCE - PLEASE DON'T TALK TOO MUCH ABOUT THIS SOURCE PUBLICLY
         var blackInkApiAppName : String? = null
         var blackInkApiKey : String? = null
 
