@@ -839,14 +839,25 @@ object FStreamExtractor : FStreamProvider() {
         callback: (ExtractorLink) -> Unit
     ) {
         val invokedSourceName = "BlackInk"
-        frenchTitle ?: throw ErrorLoadingException("empty frenchTitle blackink")
-        year ?: throw ErrorLoadingException("empty year blackink")
-        val isTvShow = wantedSeason != null && wantedEpisode != null
-        val html =
-            app.get(
-                "$blackInkUrl/find?search=${frenchTitle.replace(" ", "+")}&type=posts&category="
-            ).document
+       frenchTitle ?: throw ErrorLoadingException("empty frenchTitle uptobox.mov")
+    year ?: throw ErrorLoadingException("empty year uptobox.mov")
+    val isTvShow = wantedSeason != null && wantedEpisode != null
 
+        val data = mapOf(
+            "search" to frenchTitle.replace(" ", "+")
+
+        val html = app.post("https://uptobox.mov", data).document
+
+        val jsCode = """
+        const links = document.querySelectorAll('a[href*="https://uptobox.eu"]');
+        const urls = Array.from(links).map(link => link.href);
+        return urls;
+    """
+    val uptoboxLinks = app.executeJavascript(jsCode) as List<String>
+
+         }?.select("div.video-list > div.video-list-image > a")?.attr("href")
+        ?: throw ErrorLoadingException("Media not found on the website !")
+        
         val whiteList = listOf(
             2,
             15,
@@ -858,23 +869,7 @@ object FStreamExtractor : FStreamProvider() {
             79,
         )
 
-        val foundUrl = html.select("div.videos > div.flex > div").firstOrNull { div ->
-            val typeWhiteList: (Int) -> Boolean = { wantedCategory ->
-                div.select("div.video-list-by").html().contains("?category=${wantedCategory}\"")
-            }
-
-            div.select("div.year-production").text().contains(year.toString()) // filter by year
-
-                    && whiteList.any (typeWhiteList) // if wanted media category
-
-                    && if(isTvShow) {
-                div.select("a > h4").text().contains("Saison $wantedSeason") // false if wrong season
-            } else {
-                true
-            }
-        }?.select("div.video-list > div.video-list-image > a")?.attr("href")
-            ?: throw ErrorLoadingException("Media not found on the website !")
-
+      
 
         val document = app.get(foundUrl).document
 
