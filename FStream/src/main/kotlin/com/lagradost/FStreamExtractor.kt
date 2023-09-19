@@ -837,7 +837,7 @@ object FStreamExtractor : FStreamProvider() {
         year: Int? = null,
         subtitleCallback: (SubtitleFile) -> Unit,
         callback: (ExtractorLink) -> Unit
-    ) {
+    ) { 
         val invokedSourceName = "BlackInk"
        frenchTitle ?: throw ErrorLoadingException("empty frenchTitle uptobox.mov")
     year ?: throw ErrorLoadingException("empty year uptobox.mov")
@@ -855,8 +855,7 @@ object FStreamExtractor : FStreamProvider() {
     """
     val uptoboxLinks = app.executeJavascript(jsCode) as List<String>
 
-         }?.select("div.video-list > div.video-list-image > a")?.attr("href")
-        ?: throw ErrorLoadingException("Media not found on the website !")
+       
         
         val whiteList = listOf(
             2,
