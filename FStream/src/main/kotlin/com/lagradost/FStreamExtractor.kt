@@ -845,7 +845,7 @@ object FStreamExtractor : FStreamProvider() {
 
         val data = mapOf(
             "search" to frenchTitle.replace(" ", "+")
-
+        )
         val html = app.post("https://uptobox.mov", data).document
 
         val jsCode = """
