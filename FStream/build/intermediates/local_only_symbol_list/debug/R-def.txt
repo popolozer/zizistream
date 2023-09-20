@@ -1,0 +1,17 @@
+R_DEF: Internal format may change without notice
+local
+drawable fstream_logo
+drawable nginx
+drawable nginx_question
+id fstream_info
+id fstream_info_imageview
+id fstream_login
+id fstream_login_imageview
+id info_main_text
+id info_sub_text
+id main_text
+id settings_root
+layout fstream_settings
+string alldebrid_account_title
+string alldebrid_info_summary
+string alldebrid_info_title

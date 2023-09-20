@@ -1,0 +1,25 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /root/zizistream/FStream/src/main/AndroidManifest.xml:2:1-36
+INJECTED from /root/zizistream/FStream/src/main/AndroidManifest.xml:2:1-36
+INJECTED from /root/zizistream/FStream/src/main/AndroidManifest.xml:2:1-36
+	package
+		ADDED from /root/zizistream/FStream/src/main/AndroidManifest.xml:2:11-34
+		INJECTED from /root/zizistream/FStream/src/main/AndroidManifest.xml
+		INJECTED from /root/zizistream/FStream/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /root/zizistream/FStream/src/main/AndroidManifest.xml:2:1-36
+uses-sdk
+INJECTED from /root/zizistream/FStream/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /root/zizistream/FStream/src/main/AndroidManifest.xml
+INJECTED from /root/zizistream/FStream/src/main/AndroidManifest.xml
+INJECTED from /root/zizistream/FStream/src/main/AndroidManifest.xml
+INJECTED from /root/zizistream/FStream/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /root/zizistream/FStream/src/main/AndroidManifest.xml
+		ADDED from /root/zizistream/FStream/src/main/AndroidManifest.xml
+		INJECTED from /root/zizistream/FStream/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /root/zizistream/FStream/src/main/AndroidManifest.xml
+		ADDED from /root/zizistream/FStream/src/main/AndroidManifest.xml
+		INJECTED from /root/zizistream/FStream/src/main/AndroidManifest.xml
