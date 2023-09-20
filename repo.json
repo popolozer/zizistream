@@ -1,0 +1,8 @@
+{
+    "name": "FStream (Repo: Français)",
+    "description": "Extensions en français",
+    "manifestVersion": 1,
+    "pluginLists": [
+        "https://raw.githubusercontent.com/popolozer/zizistream/main/build/plugins.json"
+    ]
+}
