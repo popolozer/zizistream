@@ -1,0 +1,21 @@
+[
+    {
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/user/repo",
+        "fileSize": 164840,
+        "status": 1,
+        "language": "fr",
+        "authors": [
+            "codeberg.org/7TE/FStream"
+        ],
+        "tvTypes": [
+            "TvSeries",
+            "Movie"
+        ],
+        "version": 5,
+        "internalName": "FStream",
+        "description": "Pas de nouvelles mises \u00e0 jour pr\u00e9vues",
+        "url": "https://raw.githubusercontent.com/user/repo/builds/FStream.cs3",
+        "name": "FStream"
+    }
+]
