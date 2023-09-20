@@ -1,7 +1,7 @@
 [
     {
         "apiVersion": 1,
-        "repositoryUrl": "https://github.com/popolozer/zizistream",
+        "repositoryUrl": "https://github.com/popolozer/zizistream/tree/main/FStream",
         "fileSize": "jsp wala",
         "status": 1,
         "language": "fr",
@@ -15,7 +15,7 @@
         "version": 5,
         "internalName": "FStream",
         "description": "Pas de nouvelles mises \u00e0 jour pr\u00e9vues",
-        "url": "https://github.com/popolozer/zizistream/blob/main/FStream/FStream.cs3",
+        "url": "https://rax.githubusercontent.com/popolozer/zizistream/main/FStream/FStream.cs3",
         "name": "FStream"
     }
 ]
