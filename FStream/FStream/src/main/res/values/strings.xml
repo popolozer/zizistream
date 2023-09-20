@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="alldebrid_account_title">Link your Alldebrid account</string>
+    <string name="alldebrid_info_title">What is Alldebrid ?</string>
+    <string name="alldebrid_info_summary">[OPTIONAL] Alldebrid will allow to play "premium" links in amazing quality (4k / 1080p).
+
+        You can have a 7 day free trial !</string>
+</resources>
